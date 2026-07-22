@@ -1,0 +1,85 @@
+# ============================================================
+# Essentius backend — solo código, tests, migraciones y docs
+# ============================================================
+
+# --- Entornos virtuales / dependencias locales ---
+venv/
+.venv/
+env/
+ENV/
+venv_broken/
+.python-version
+
+# --- Secretos (NUNCA subir) ---
+.env
+.env.*
+!.env.example
+
+# --- Python: caché, build, empaquetado ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# --- Tests / cobertura / tipado ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.dmypy.json
+dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+.cache/
+
+# --- Logs y temporales ---
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# --- Uploads / datos locales (no son el código) ---
+uploads/
+media/
+data/local/
+*.sqlite
+*.sqlite3
+*.db
+
+# --- IDE / editores / OS ---
+.idea/
+.vscode/
+.cursor/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Docker / deploy local (overrides personales) ---
+docker-compose.override.yml
+.env.docker
+
+# --- Notebooks / experimentos personales ---
+.ipynb_checkpoints/
+*.ipynb
